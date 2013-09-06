@@ -56,10 +56,10 @@ derby-i18n adds a few view helpers for you to use, including:
 
 	If using the `path` urlScheme, this will return the given path with `/[locale]/` prepended to it - for example `/en/` for the English locale. If not using the `path` urlScheme, nothing happens. This is useful for making sure your URLs are always pointing at the correct language.
 
-derby-i18n also sets an `_i18n` field on your model:
+derby-i18n also sets an `_page._i18n` field on your model:
 
 ```
-model.set('_i18n', {
+model.set('_page._i18n', {
     locale: locale,
     language: language,
     region: region,
